@@ -1,0 +1,185 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>SQL</title>
+<LINK rel=stylesheet type="text/css" href="style.css">
+<LINK rel=stylesheet type="text/css" href="normalize.css">
+</head>
+<body>
+
+<address>Автор: Холина Ангелина </address>
+<address>Источники: <a href="https://ru.wikipedia.org/wiki/SQL">Википедия</a>
+</address>
+
+<p style="text-align:center"><img src="logo.png" height="200" width="350"></center></p> 
+
+<br>
+<div> 
+<ul class = 'marker'>
+        <h2 style = "text-decoration:underline; text-indent:0px">Содержание</h2>
+        <li><a href="#name1">История языка SQL</a></li>
+        <li><a href="#name2">Особенности языка SQL</a></li>
+        <li><a href="#name3">Примеры кода на SQL</a></li>
+</ul>
+</div>
+
+<br>
+<hr>
+<p> <h2 id="name1";> История языка SQL </h2>
+
+    <img align="left" src="levo.png" height="250" width="250"> </p> 
+    <p> Дональд Чемберлин и Раймонд Бойс начали работу над языком реляционных баз данных после встречи с Э. Коддом в 1972 году, где им было представлено представление сложных запросов с использованием реляционной алгебры и исчисления. Они хотели создать простой язык, доступный для использования любым пользователем, даже без навыков программирования или знаний математики.
+<p> Чемберлин и Бойс разработали язык реляционных баз данных после встречи с Коддом в 1972 году. Они создали язык SQUARE, но он был сложен в использовании. В 1973 году они начали работу над новым языком SEQUEL. Они хотели, чтобы даже пользователи-неспециалисты могли читать запросы на языке SEQUEL как на обычном английском языке. Язык был назван "декларативным" и предполагалось, что специальный компилятор будет заниматься переводом декларативных запросов в детальные планы выполнения.</p> 
+<p> В 1986 году ANSI (American National Standards Institute) принял стандарт SQL, который определял базовый набор команд и функций для работы с реляционными базами данных. В 1987 году ISO (International Organization for Standardization) принял свой стандарт SQL, который был практически идентичным ANSI SQL. С тех пор SQL стал широко распространенным языком для работы с реляционными базами данных. Существуют различные диалекты SQL, включая MySQL, Oracle SQL, Microsoft SQL Server и другие. SQL используется для создания, модификации и извлечения данных из баз данных, а также для управления структурой и схемой базы данных. SQL также имеет возможности для выполнения аналитических запросов, создания отчетов и проведения агрегации данных. Он стал неотъемлемой частью разработки и администрирования баз данных и используется как профессионалами, так и начинающими разработчиками данных.</p>
+<p> Первый прототип языка SQL представила в 1979 году компания-разработчик Oracle. Сначала это был простейший инструмент для извлечения нужных данных, вроде фильтров в Excel-таблицах. С годами он усложнился, и теперь его применяют в качестве одного из основных инструментов для обработки данных. С помощью SQL можно:</span></p>
+<p>
+<ul>
+<li>собирать и хранить данные в виде таблиц</li>
+<li>изменять их содержимое и структуру</li>
+<li>объединять данные и выполнять вычисления</li>
+<li>защищать и распределять доступ</li>
+</ul>
+</p>
+<p>Изначально термин SQL являлся аббревиатурой, однако в первом официальном стандарте ANSI 1986 года фраза «Structured Query Language» нигде не упоминалась, а язык назывался «Database Language — SQL». В последующих стандартах ISO/IEC 9075:1989 и ISO/IEC 9075:1992 вместо «Database Language — SQL» использовалось название «Database Language SQL», или просто «language SQL»[10]. Однако в описании стандарта ISO/IEC 9075-1:2011 на сайте ISO указывалось: «ISO/IEC 9075 defines Structured Query Language (SQL)».</p>
+<p>SQL был не единственным языком подобного назначения. В Калифорнийском Университете Беркли была разработана некоммерческая СУБД Ingres, которая являлась реляционной СУБД, но использовала свой собственный язык QUEL, который, не выдержал конкуренции по количеству поддерживающих его СУБД по сравнению с языком SQL. В качестве альтернативного подхода для обеспечения пользовательского доступа к базам данных также рассматривался появившийся в 1970-е годы метод QBE, впоследствии в видоизменённой форме появившийся в ряде интегрированных сред управления данными, но так и не заменивший, а лишь дополнивший SQL.</p>
+<hr>
+<h2 id="name2"; style="font-size: 18px;">Особенности языка SQL</h2>
+<p; style="font-size: 14px;">
+
+
+<img align="right" src="pravo.jpg" height="150" width="300"> 
+<p> Язык программирования JAVA имеет целый ряд существенных преимуществ, которые в итоге и сделали его одним из самых популярных языков современности. Среди них выделяют следующие:
+ <ol>
+    <li>Это язык запросов, а не программирования. Его используют в дополнение к Python, JavaScript или C++, но только для работы с базами данных. Написать на нём полноценный сайт или приложение невозможно;</li>
+    <li>Чёткая и понятная структура. Это делает язык SQL для работы с данными относительно простым для начинающих;</li>
+    <li>Универсальность. Есть единые стандарты построения запросов для любых баз данных и браузеров, которые позволяют обрабатывать даже очень большие объёмы информации;</li>
+    <li>Совместный доступ. SQL позволяет создавать интерактивные запросы. Это значит, что можно получать нужные данные онлайн и принимать решения на их основе;</li>
+    <li>Управление доступом. При помощи SQL можно предоставить, закрыть или ограничить доступ к данным для разных групп пользователей, а также выдать им определённый набор функций: чтение, изменение, создание, удаление, копирование. Это защищает базы данных от взлома или несогласованных изменений;</li>
+  </ol>
+</p>
+
+<p>
+
+<table class="t1">
+<caption><b>Выделим основные преимущества и недостатки языка SQL:</b></caption>
+ <thead>
+    <tr>
+      <th>Преимущества</th>
+      <th>Недостатки</th>
+    </tr>
+  </thead>
+
+  <tbody>
+  <tr><td>Быстрая обработка запросов. Большой объем данных извлекается быстро и эффективно. Такие операции, как вставка, удаление, манипулирование данными, также выполняются практически мгновенно.</td><td>Стоимость. Некоторые версии являются дорогостоящими, и, следовательно, программисты не могут получить к ним доступ.</td></tr>
+  <tr><td>Для извлечения данных не требуется большого количества строк кода. В SQL используются все основные ключевые слова, такие как SELECT, INSERT INTO, UPDATE и т.д., А также синтаксические правила, которые не являются сложными, что делает его удобным для пользователя языком.</td><td>Отсутствие аналитики в реальном времени: базы данных SQL предназначены для пакетной обработки и не поддерживают аналитику в реальном времени, что может быть недостатком для приложений, требующих обработки данных в реальном времени.</td></tr>
+  <tr><td>Простой в освоении и понимании, ответы на сложные запросы можно получить за считанные секунды.</td><td>SQL имеет сложный интерфейс, который вызывает у немногих пользователей дискомфорт при работе с базой данных.</td></tr>
+ </tbody>
+</table>
+<p>
+<hr>
+
+<h2 id="name3";>Примеры кода</h2>
+<div class="block1">
+<p>Выбрать все (обозначается как *) из таблицы Customers:</p>
+<p><span class="a">select</span> <span class="b">*</span><span class="a"> from </span></p>
+
+<p>Выбрать столбцы CustomerID, CustomerName из таблицы Customers:</p>
+<p><span class="a">select</span><span class="b"> CustomerID, CustomerName</span><span class="a"> from </span><span class="b"> Customers</span></p>
+
+<p>Фильтрация по одному условию и одному значению:</p>
+<p><span class="a">select</span> <span class="b">*</span><span class="a"> FROM</span></p>
+<p><span class="a">WHERE</span> <span class="b"> City = </span><span class="g">'London'</span></p>
+
+<p>Группировка количества клиентов по стране и городу:</p>
+<p><span class="a">select</span> <span class="b"> Country, City, </span><span class="o">count</span><span class="b">(CustomerID)</span><span class="a"> from </span><span class="b">Customer</span>
+<p><span class="a">GROUP BY</span><span class="b"> Country, City</span>
+
+</div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<p>
+  <ins>CSS свойства</ins>
+  <ol style="column-count:2; text-align:justify;">
+    <li>border-bottom-left-radius
+    <li>border-bottom-right-radius
+    <li>border-top-right-radius
+    <li>border-top-left-radius
+    <li>border-collapse
+    <li>border-radius
+    <li>border-bottom
+    <li>border-right
+    <li>background
+    <li>border
+    <li>column-count
+    <li>color
+    <li>font-stretch
+    <li>font-family
+    <li>font-size
+    <li>float
+    <li>height
+    <li>list-style-image
+    <li>margin-left
+    <li>margin-top
+    <li>margin
+    <li>outline-offset
+    <li>outline-color
+    <li>outline-style
+    <li>outline-width
+    <li>overflow
+    <li>opacity
+    <li>padding-bottom
+    <li>padding-right
+    <li>padding-left
+    <li>padding-top
+    <li>padding
+    <li>text-decoration-color
+    <li>text-decoration-style
+    <li>text-decoration
+    <li>text-transform
+    <li>text-shadow
+    <li>text-indent
+    <li>text-aligh
+    <li>width
+  </ol>
+</p>
+<p>
+<ins>Теги</ins>
+  <ol style="column-count:2; text-align:justify;">
+    <li>&lthtml&gt
+    <li>&lttitle&gt
+    <li>&lthead&gt
+    <li>&ltdiv&gt
+    <li>&ltp&gt
+    <li>&lth1&gt
+    <li>&lth2&gt
+    <li>&ltdiv&gt
+    <li>&ltimg&gt
+    <li>&lta&gt
+    <li>&ltth&gt
+    <li>&lthr&gt
+    <li>&ltcaption&gt
+    <li>&ltthead&gt
+    <li>&lttbody&gt
+    <li>&ltspan&gt
+    <li>&lti&gt
+    <li>&ltins&gt
+    <li>&ltdoctype&gt
+    <li>&ltb&gt
+    <li>&ltblockquote&gt
+    <li>&ltsmall&gt
+    <li>&ltol&gt
+    <li>&ltli&gt
+    <li>&lttable&gt  
+    <li>&lttr&gt
+    <li>&lttd&gt
+    <li>&ltul&gt
+    <li>&ltbody&gt
+    <li>&ltlink&gt
+    <li>&ltaddress&gt
+
+
+  </ol>
+</p> 
+
+</body>
+</html>
