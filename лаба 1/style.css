@@ -1,0 +1,120 @@
+address{
+    text-align: right;
+    text-shadow: 1px 1px #9ce5ff;
+  }
+  
+  blockquote{
+    text-align: center;
+  }
+  
+  h2
+  { 
+     font-size: 18px; 
+     font-style: italic;
+     text-indent: 25px;
+     text-decoration: underline dotted;;
+     text-decoration-style: double;
+     font-family: century gothic, monospace;
+     font-stretch: expanded;
+     text-decoration-color: rgb(255, 0, 200);
+     margin-top: 20px;
+  }
+  
+  ul{
+    font-size:14px;
+  }
+  
+  p { 
+     font-size: 14px; 
+     text-align: justify;
+     padding-left: 10px;
+     padding-right: 10px;
+     text-indent: 15px;
+  }
+  
+  
+  ul.marker{
+    list-style-image: url("marker.png");
+    outline-color: #46463a;
+    outline-offset: 10px;
+    outline-style: dotted;
+    outline-width: 5px;
+     padding-bottom: 10px;
+   }
+  
+  
+  
+  table {
+      color:#46463a;
+      background:rgb(230, 230, 250);
+      border:3px solid rgb(0, 0, 0);
+      padding:0.5cm;
+      text-align:left;
+    border-bottom-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+      }
+  
+  table.t1 {
+  margin: 1em auto;
+  border-collapse: collapse;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 0ex
+  }
+  .t1 th, .t1 td {
+  padding: 4px 8px;
+  }
+  .t1 thead th {
+  background: #cbcbc0;
+  text-transform: lowercase;
+  text-align: center;
+  font-size: 15px;
+  color: #65655d;
+  }
+  .t1 tr {
+  border-right: 1px solid #46463a;
+  }
+  .t1 tbody tr {
+  border-bottom: 1px solid #46463a;
+  }
+  .t1 tbody tr:nth-child(odd) {
+  background: #fcfcee;
+  }
+  .t1 tbody tr:nth-child(even) {
+  background:#d4d4c8;
+  }
+  .t1 tbody th, .t1 tbody tr:nth-child(even) td {
+  border-right: 1px solid #46463a; 
+  }
+  .t1 tbody th, .t1 tbody tr:nth-child(odd) td {
+  border-right: 1px solid #46463a; 
+  }
+  
+  
+  .block1{
+  width:800px;
+  height:200px;
+  background:rgb(240, 248, 255);
+  padding: 5px;
+  margin-left:10px;
+  border: solid 3px rgb(22, 7, 51);
+  float: left;
+  overflow:scroll;
+  }
+  
+  span.a{
+    color:rgb(139, 38, 203);
+  }
+  span.b{
+    color:rgb(0,0,0);
+  }
+  span.g{
+    color:rgb(66, 131, 66);
+  }
+  span.o{
+    color:rgb(244, 138, 24);
+  }
+   
+   
+  
