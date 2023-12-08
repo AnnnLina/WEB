@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>zada4</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    
+    #result {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Задание 4</h1>
+  
+  <label for="word1">Слово 1: </label>
+  <input type="text" id="word1" />
+  <br/><br/>
+  
+  <label for="word2">Слово 2: </label>
+  <input type="text" id="word2" />
+  <br/><br/>
+  
+  <button onclick="checkWords()">Проверить</button>
+  
+  <p id="result"></p>
+  
+  <script>
+    function checkWords() {
+      var word1 = document.getElementById("word1").value.toLowerCase();
+      var word2 = document.getElementById("word2").value.toLowerCase();
+      
+      var letters1 = {};
+      var letters2 = {};
+      
+      // Подсчет количества букв в первом слове
+      for (var i = 0; i < word1.length; i++) {
+        var letter = word1.charAt(i);
+        if (letters1[letter]) {
+          letters1[letter]++;
+        } else {
+          letters1[letter] = 1;
+        }
+      }
+      
+      // Подсчет количества букв во втором слове
+      for (var i = 0; i < word2.length; i++) {
+        var letter = word2.charAt(i);
+        if (letters2[letter]) {
+          letters2[letter]++;
+        } else {
+          letters2[letter] = 1;
+        }
+      }
+      
+      // Проверка, состоят ли слова из одних и тех же букв
+      var areSameLetters = true;
+      for (var letter in letters1) {
+        if (letters1.hasOwnProperty(letter) && letters1[letter] !== letters2[letter]) {
+          areSameLetters = false;
+          break;
+        }
+      }
+      
+      var result = document.getElementById("result");
+      
+      if (areSameLetters) {
+        result.textContent = "Слова состоят из одних и тех же букв";
+      } else {
+        result.textContent = "Слова не состоят из одних и тех же букв";
+      }
+    }
+  </script>
+</body>
+</html>

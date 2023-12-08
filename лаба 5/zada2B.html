@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Часть B</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .input-container {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .output-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+
+    #input-array {
+      width: 300px;
+      padding: 5px;
+      font-size: 16px;
+    }
+
+    #result {
+      font-weight: bold;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Часть В</h1>
+  <div class="input-container">
+    <label for="input-array">Введите массив чисел через запятую:</label>
+    <br>
+    <input type="text" id="input-array">
+  </div>
+  <div class="output-container">
+    <button onclick="processArray()">Обработать массив</button>
+    <br>
+    <span id="result"></span>
+  </div>
+
+  <script>
+    function processArray() {
+      var inputArray = document.getElementById("input-array").value.split(",");
+      var processedArray = inputArray.filter(function(num) {
+        var absoluteIntegerPart = Math.abs(parseInt(num));
+        var evenSum = 0;
+        var oddSum = 0;
+        var digits = absoluteIntegerPart.toString().split("").map(Number);
+        
+        for (var i = 0; i < digits.length; i++) {
+          if (i % 2 === 0) {
+            evenSum += digits[i];
+          } else {
+            oddSum += digits[i];
+          }
+        }
+
+        return evenSum !== oddSum;
+      });
+      
+      document.getElementById("result").innerHTML = "Результат: " + processedArray.join(", ");
+    }
+  </script>
+</body>
+</html>

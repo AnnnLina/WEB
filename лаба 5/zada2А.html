@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Array Processing</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    #result {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Часть A</h1>
+  
+  <script>
+    function calculateProduct() {
+      // Входные данные
+      var numbers = [1.5, 3, Math.PI, 2.7, 4, 5, 1.2, Math.PI, 0.1, 6.5];
+
+      var start = -1; // Индекс первого элемента, удовлетворяющего условию
+      var end = -1; // Индекс последнего элемента, удовлетворяющего условию
+
+      // Найти индексы первого и последнего элементов, удовлетворяющих условию
+      for (var i = 0; i < numbers.length; i++) {
+        if (Math.abs(numbers[i] - Math.PI) <= 0.00001) {
+          if (start === -1) {
+            start = i;
+          } else {
+            end = i;
+          }
+        }
+      }
+
+      // Если не найдено ни одного элемента, удовлетворяющего условию
+      if (start === -1 || end === -1) {
+        document.getElementById("result").textContent = "No elements found";
+        return;
+      }
+
+      // Вычислить произведение элементов между первым и последним элементами, удовлетворяющими условию
+      var product = 1;
+      for (var j = start + 1; j < end; j++) {
+        product *= numbers[j];
+      }
+
+      document.getElementById("result").textContent = "Результат: " + product;
+    }
+  </script>
+
+  <button onclick="calculateProduct()">Посчитать</button>
+  <div id="result"></div>
+</body>
+</html>

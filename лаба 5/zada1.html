@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>Вычисление произведения</h1>
+    <p id="result"></p>
+
+    <script>
+      let result = 1;
+
+      for (let i = 2; i <= 50; i++) {
+        let sum = 0;
+
+        for (let j = 1; j <= i; j++) {
+          sum += j;
+        }
+
+        result *= sum; 
+      }
+
+      document.getElementById("result").innerHTML = "Ответ: " + result;
+    </script>
+  </body>
+</html>
