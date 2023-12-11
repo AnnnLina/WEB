@@ -1,0 +1,91 @@
+.solar-system {
+    position: relative;
+    width: 500px; /* Подбери нужный размер */
+    height: 450px;
+    margin: 0 auto;
+    border: 2px solid rgb(255, 255, 255); /* Добавь стили для области солнечной системы */
+    border-radius: 80%;
+    overflow: hidden;
+  }
+  
+  .sun {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px; /* Подбери нужный размер */
+    height: 100px;
+    background-color: yellow; /* Меняй стили в соответствии с твоим представлением солнца */
+    border-radius: 50%;
+  }
+  
+  .planet {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform-origin: 50% 200px; /* Подбери нужное смещение планеты относительно солнца */
+    border-radius: 50%;
+    animation: orbit 10s linear infinite; 
+  }
+  
+  @keyframes orbit {
+    0% {
+      transform: rotate(0deg) translateY(0px); 
+    }
+    100% {
+      transform: rotate(360deg) translateY(0px); 
+    }
+  }
+  
+  .mercury {
+    background-color: orange; 
+    width: 10px; 
+    height: 10px;
+    animation: orbit 10s linear infinite; 
+  }
+  
+  .venus {
+    background-color: lightblue;
+    width: 20px; 
+    height: 20px;
+    animation: orbit 15s linear infinite; 
+  }
+  .earth {
+    background-color: rgb(88, 176, 88);
+    width: 30px; 
+    height: 30px;
+    animation: orbit 20s linear infinite; 
+    
+  }
+  .mars {
+    background-color: rgb(153, 104, 203);
+    width: 33px; 
+    height: 33px;
+    animation: orbit 25s linear infinite; 
+  }
+  .jupiter {
+    background-color: rgb(215, 134, 196);
+    width: 25px; 
+    height: 25px;
+    animation: orbit 13s linear infinite; 
+  }
+  .saturn {
+    background-color: rgb(215, 116, 116);
+    width: 8px; 
+    height: 8px;
+    animation: orbit 8s linear infinite; 
+  }
+  .uranus {
+    background-color: rgb(238, 255, 139);
+    width: 17px; 
+    height: 17px;
+    animation: orbit 5s linear infinite; 
+  }
+  .neptune {
+    background-color: rgb(173, 203, 230);
+    width: 40px; 
+    height: 40px;
+    animation: orbit 10s linear infinite; 
+  }
+  
+  
